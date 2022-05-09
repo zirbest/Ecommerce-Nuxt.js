@@ -1,10 +1,5 @@
 <template>
-  <Header />
-  <main>
+  <div min-h-screen h-full>
     <slot />
-    <!-- <div class="mt-5 mx-autoopacity-25 text-sm"> -->
-    <!--   [Default Layout] -->
-    <!-- </div> -->
-  </main>
-  <!-- <Footer /> -->
+  </div>
 </template>
