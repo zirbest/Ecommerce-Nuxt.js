@@ -30,9 +30,9 @@ const isSearch = ref(false);
       class="flex flex-col gap-10 w-full mt-4 order-2"
       sm="flex-row items-center mt-auto w-auto h-full gap-14 order-none"
     >
-      <a hover="op70" font-500 text-center p-2 sm="text-auto" href="#">Men</a>
-      <a hover="op70" font-500 text-center p-2 sm="text-auto" href="#">Women</a>
-      <a hover="op70" font-500 text-center p-2 sm="text-auto" href="#">Kids</a>
+      <a hover="op70" font-500 text-center p-2 sm="text-auto" href="#">Products</a>
+      <a hover="op70" font-500 text-center p-2 sm="text-auto" href="#">Insipiration</a>
+      <a hover="op70" font-500 text-center p-2 sm="text-auto" href="#">Rooms</a>
     </div>
 
     <div class="space-x-2">

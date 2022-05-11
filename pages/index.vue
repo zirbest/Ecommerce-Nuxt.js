@@ -1,5 +1,5 @@
 <template>
-  <div flex flex-col h-full class="bg-no-repeat">
+  <div container ma min-h-screen h-full flex flex-col class="bg-no-repeat">
     <div
       class="filter -z-1 brightness-30"
       absolute
@@ -11,5 +11,17 @@
     ></div>
     <Header />
     <Hero />
+    <HeaderWhyChoseUs />
   </div>
 </template>
+
+<!-- <li> -->
+<!--   <span i-carbon:delivery></span> -->
+<!--   <span>99% satisfied Customers</span> -->
+<!--   <span>Out clients opinions speak for themeselves</span> -->
+<!-- </li> -->
+<!-- <li> -->
+<!--   <span i-carbon:delivery></span> -->
+<!--   <span>Originality Guaranteed</span> -->
+<!--   <span>30 days warranty for each product from our store</span> -->
+<!-- </li> -->

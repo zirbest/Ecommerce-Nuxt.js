@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   },
   unocss: {
     uno: true,
+    typography: true,
     attributify: true,
     preflight: true,
     theme: {
