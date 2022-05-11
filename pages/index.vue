@@ -13,6 +13,8 @@
     <Hero />
     <HeaderWhyChoseUs />
   </div>
+  <WhatsNew />
+  <div mt-20000></div>
 </template>
 
 <!-- <li> -->
