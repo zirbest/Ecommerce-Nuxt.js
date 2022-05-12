@@ -1,5 +1,5 @@
 <template>
-  <div container ma mt10 flex="~ wrap" c-white>
+  <div container mxa mt="20 sm:40" flex="~ wrap" c-white>
     <div relative flex="[1_1_20rem]" h="12rem lg:15rem">
       <img
         absolute
@@ -20,7 +20,7 @@
       ></div>
       <div isolate flex="~ col" space-y3 items-center justify-center h-full>
         <p mt6 text-lg text-center>New collection available now</p>
-        <a bg-white text="slate-7 sm" fw-bold p="x3 y2" rounded-full>
+        <a href="#" bg-white hover:op80 text="slate-7 sm" fw-bold p="x3 y2" rounded-full>
           VIEW ALL
         </a>
       </div>
@@ -44,7 +44,7 @@
       ></div>
       <div isolate flex="~ col" space-y3 items-center justify-center h-full>
         <p mt6 text-lg text-center>Redefining the modern design</p>
-        <a href="#" bg-white text="slate-7 sm" fw-bold p="x3 y2" rounded-full
+        <a href="#" hover:op80 bg-white text="slate-7 sm" fw-bold p="x3 y2" rounded-full
           >CHECK MORE</a
         >
       </div>

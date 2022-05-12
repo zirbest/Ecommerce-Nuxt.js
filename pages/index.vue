@@ -1,5 +1,5 @@
 <template>
-  <div container ma min-h-screen h-full flex flex-col class="bg-no-repeat">
+  <div container mxa min-h-screen h-full flex flex-col class="bg-no-repeat">
     <div
       class="filter -z-1 brightness-30"
       absolute
@@ -14,7 +14,8 @@
     <HeaderWhyChoseUs />
   </div>
   <WhatsNew />
-  <div mt-20000></div>
+  <SelectedForYou />
+  <div mt-200></div>
 </template>
 
 <!-- <li> -->
