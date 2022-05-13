@@ -1,6 +1,6 @@
 <template>
-  <div class="mxa container">
-    <h3 class="text-center my30 text-2xl">Why Should Choose us?</h3>
+  <div class="mxa container mt35">
+    <h3 class="text-center my20 text-2xl">Why Should Choose us?</h3>
     <ul flex="~ wrap" class="max-w[max-content] mxa">
       <li flex="~ col" class="p4" >
         <span mb3 inline-block h-14 w-14 p2 rounded-lg bg-gray:20>
