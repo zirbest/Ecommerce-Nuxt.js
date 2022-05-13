@@ -14,7 +14,7 @@
     <HeaderWhyChoseUs />
   </div>
   <WhatsNew />
-  <SelectedForYou>
+  <SelectedForYou isNav>
     <p text-2xl>Selected just for you</p>
     <a btn> SHOW MORE </a>
   </SelectedForYou>

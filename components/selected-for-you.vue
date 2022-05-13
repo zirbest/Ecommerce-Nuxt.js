@@ -6,6 +6,15 @@
       <!-- <p text-xl w-full text-center>Selected just for you</p> -->
       <slot />
     </div>
-    <ProductCard />
+    <ProductCard :isNav="isNav"/>
   </div>
 </template>
+
+<script setup lang="ts">
+defineProps({
+  isNav: {
+    type: Boolean,
+    default: false
+  }
+})
+</script>

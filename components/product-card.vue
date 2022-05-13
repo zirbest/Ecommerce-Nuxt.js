@@ -1,7 +1,7 @@
 <template>
   <div flex items-center gap9>
     <span flex-none w10 h10 hidden md:inline-block>
-      <UnoIcon
+      <UnoIcon v-if="isNav"
         @click="doScroll(-130)"
         wfull
         hfull
@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <span flex-none w10 h10 hidden md:inline-block>
+    <span v-if="isNav" flex-none w10 h10 hidden md:inline-block>
       <UnoIcon
         @click="doScroll(130)"
         wfull
@@ -132,5 +132,12 @@ const container = ref(null)
 const doScroll = function(dir=20) {
   container.value.scrollLeft += dir
 }
+
+defineProps({
+  isNav: {
+    type: Boolean,
+    default: false
+  }
+})
 
 </script>
