@@ -22,6 +22,7 @@
   <SelectedForYou>
     <p text="2xl center" w-full>Products in today</p>
   </SelectedForYou>
+  <Subscription />
   <div mt-100></div>
 </template>
 

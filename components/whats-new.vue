@@ -7,7 +7,6 @@
         wfull
         hfull
         z="-2"
-        w-full
         src="https://images.unsplash.com/photo-1563637329737-328724d1394d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyYfHNvZmElMjBjaGFpcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&h=250&w=500&q=60"
         alt=""
       />
@@ -15,8 +14,8 @@
         mix-blend-multiply
         bg="[hsl(32_100%_50%)]"
         absolute
-        w-full
-        h-full
+        wfull
+        hfull
       ></div>
       <div isolate flex="~ col" space-y3 items-center justify-center h-full>
         <p mt6 text-lg text-center>New collection available now</p>
