@@ -14,8 +14,15 @@
     <HeaderWhyChoseUs />
   </div>
   <WhatsNew />
-  <SelectedForYou />
-  <div mt-200></div>
+  <SelectedForYou>
+    <p text-2xl>Selected just for you</p>
+    <a btn> SHOW MORE </a>
+  </SelectedForYou>
+  <WhyShouldChooseUs />
+  <SelectedForYou>
+    <p text="2xl center" w-full>Products in today</p>
+  </SelectedForYou>
+  <div mt-100></div>
 </template>
 
 <!-- <li> -->
