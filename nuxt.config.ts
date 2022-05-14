@@ -34,7 +34,7 @@ export default defineNuxtConfig({
       },
     },
     shortcuts: [
-      ['btn', 'px-4 py-1 ws-nowrap rounded-full inline-block text-slate-8 b b-gray cursor-pointer hover:op-80 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+      ['btn', 'px-5 py-2 ws-nowrap fw-semibold rounded-full inline-block text-slate-8 b b-gray cursor-pointer hover:op-80 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
     ],
   },
   colorMode: {

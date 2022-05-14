@@ -19,7 +19,7 @@
             type="email"
             p="x8 y3"
             w="full sm:a"
-            class="fw-semibold btn b-none"
+            class="btn b-none"
             placeholder="Enter your email"
           />
           <button

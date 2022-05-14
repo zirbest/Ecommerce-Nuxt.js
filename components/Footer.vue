@@ -1,6 +1,6 @@
 <template>
   <section text-slate-6 container mx-a mt-20 flex="~ wrap gap-4">
-    <div flex="~ col" justify-between grow w="full lg:a">
+    <div flex="~ col gap-4" justify-between grow w="full lg:a">
       <div text-xl c-slate-8 stroke-width-3 h-8 maxw-20 inline-flex gap-4 items-center>
         <Logo h-full />
         <span text-md fw-semibold><span c-blue>E-</span>Shop</span>

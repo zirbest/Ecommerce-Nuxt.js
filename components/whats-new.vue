@@ -19,9 +19,9 @@
       ></div>
       <div isolate flex="~ col" space-y3 items-center justify-center h-full>
         <p mt6 text-lg text-center>New collection available now</p>
-        <a href="#" bg-white hover:op80 text="slate-7 sm" fw-bold p="x3 y2" rounded-full>
+        <NuxtLink href="#" class="btn b-none bg-white">
           VIEW ALL
-        </a>
+        </NuxtLInk>
       </div>
     </div>
     <div relative flex="[1_1_20rem]" h="12rem lg:15rem">
@@ -43,9 +43,9 @@
       ></div>
       <div isolate flex="~ col" space-y3 items-center justify-center h-full>
         <p mt6 text-lg text-center>Redefining the modern design</p>
-        <a href="#" hover:op80 bg-white text="slate-7 sm" fw-bold p="x3 y2" rounded-full
-          >CHECK MORE</a
-        >
+        <NuxtLink href="#" class="btn b-none bg-white">
+          CHECK MORE
+        </NuxtLink>
       </div>
     </div>
   </div>
