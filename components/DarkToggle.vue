@@ -7,7 +7,7 @@ function toggleDark() {
 </script>
 
 <template>
-  <button class="!outline-none" @click="toggleDark">
-    <div class="dark:i-carbon-moon i-carbon-sun" />
+  <button class="w-6 h-6" @click="toggleDark">
+    <UnoIcon class="!w-full !h-full dark:i-carbon-moon i-carbon-sun" />
   </button>
 </template>
