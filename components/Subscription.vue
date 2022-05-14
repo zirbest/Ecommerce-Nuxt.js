@@ -1,5 +1,5 @@
 <template>
-  <div class="container c-white mxa b" mt="20 sm:40" flex="~ wrap">
+  <div class="container c-white mxa" mt="20 sm:40" flex="~ wrap">
     <div relative grow wfull h="minh-12rem md:15rem">
       <img
         class="absolute object-cover wfull hfull"
@@ -10,7 +10,7 @@
         class="mix-blend-multiply absolute wfull hfull"
         bg="[hsl(32_100%_20%)]"
       ></div>
-      <div b b-8 isolate p8 flex="~ col lg:row gap-4" items-center md:justify-between h-full>
+      <div isolate p8 flex="~ col lg:row gap-4" items-center md:justify-between h-full>
         <p text="xl md:2xl center lg:start" md:w-30ch fw-semibold>
           Subscribe to our newsletter and receive exclusive offers every week
         </p>
