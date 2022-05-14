@@ -23,16 +23,7 @@
     <p text="2xl center" w-full>Products in today</p>
   </SelectedForYou>
   <Subscription />
+  <Footer />
   <div mt-100></div>
 </template>
 
-<!-- <li> -->
-<!--   <span i-carbon:delivery></span> -->
-<!--   <span>99% satisfied Customers</span> -->
-<!--   <span>Out clients opinions speak for themeselves</span> -->
-<!-- </li> -->
-<!-- <li> -->
-<!--   <span i-carbon:delivery></span> -->
-<!--   <span>Originality Guaranteed</span> -->
-<!--   <span>30 days warranty for each product from our store</span> -->
-<!-- </li> -->
