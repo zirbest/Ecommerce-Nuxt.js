@@ -1,31 +1,34 @@
 <template>
   <div flex items-center gap9>
-    <span flex-none w10 h10 hidden md:inline-block>
-      <UnoIcon v-if="isNav"
-        @click="doScroll(-130)"
+
+    <button v-if="isNav" flex-none w10 h10 hidden md:inline-block>
+      <!-- transition -->
+      <UnoIcon
+        :class="scroll.isLeft ? 'op-20 cursor-not-allowed' : 'hover:scale-110'"
         wfull
         hfull
-        c-gray5
-        transition
-        hover:scale-110
         transform-gpu
-        hover:scale9
+        transition-all
+        transition-1000ms
+        @click="doScroll(-130)"
         i-carbon-arrow-left
       />
-    </span>
+    </button>
+
     <div
       ref="container"
       class="[scrollbar-width:none] md:[scrollbar-width:auto]"
       p="x30 y5"
       flex="~ gap10"
-      mt10
       snap-x
+      mt10
       of-x-auto
       scroll-smooth
+      grow
     >
-      <div v-if="pending" w-full bg-gray:40 grow w50 h70 mxa v-for="i in 4" animate-pulse /> <!-- FIX: BUG: not working if remove comment -->
+      <div v-if="pending" snap-center flex-none w-full bg-gray:40 grow w50 h70 mxa v-for="i in 4" animate-pulse />
 
-      <div v-else flex-none v-for="product in data.products" snap-center :key="product.id">
+      <div v-if="!pending" snap-center flex-none v-for="product in data.products" :id="product.id"  :key="product.id">
         <div relative w50 h70>
           <small v-if="product.oldPrice"
             p="x8px y4px"
@@ -53,17 +56,19 @@
         </div>
       </div>
     </div>
-    <span v-if="isNav" flex-none w10 h10 hidden md:inline-block>
+    <button v-if="isNav" flex-none w10 h10 hidden md:inline-block>
+      <!-- transition -->
       <UnoIcon
-        @click="doScroll(130)"
+        :class="scroll.isRight ? 'op-20 cursor-not-allowed' : 'hover:scale-110'"
         wfull
         hfull
-        transition
-        hover:scale-110
         transform-gpu
+        transition-all
+        transition-1000ms
+        @click="doScroll(130)"
         i-carbon-arrow-right
       />
-    </span>
+    </button>
   </div>
 </template>
 
@@ -75,9 +80,17 @@ const discountPercent = (price, oldPrice)=>{ return Math.floor((oldPrice-price)*
 const container = ref(null)
 
 // NOTE: snap-x snap-center
-const doScroll = function(dir=20) {
+const doScroll = function(dir=130) {
   container.value.scrollLeft += dir
 }
+
+const scroll = reactive({ isLeft:  true, isRight: false })
+watch(container, ()=> {
+  container.value.onscroll = () => {
+    scroll.isLeft = container.value.scrollLeft == 0
+    scroll.isRight =  (container.value.scrollWidth - container.value.clientWidth) - container.value.scrollLeft == 0
+  }
+})
 
 defineProps({
   isNav: {

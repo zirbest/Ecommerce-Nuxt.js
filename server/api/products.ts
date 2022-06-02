@@ -24,7 +24,7 @@ const products = [
     oldPrice: null,
   },
   {
-    id: 4,
+    id: 3,
     image:
       "https://images.unsplash.com/photo-1506898667547-42e22a46e125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     name: "Eurosofa",
@@ -32,7 +32,7 @@ const products = [
     oldPrice: null,
   },
   {
-    id: 5,
+    id: 4,
     image:
       "https://images.unsplash.com/photo-1619596662481-085e45d69762?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNoYWlyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     name: "Chaire blue ",
@@ -40,7 +40,7 @@ const products = [
     oldPrice: null,
   },
   {
-    id: 6,
+    id: 5,
     image:
       "https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
     name: "Chair red",
@@ -49,6 +49,4 @@ const products = [
   },
 ];
 
-export default defineEventHandler(() => ({
-  products
-}));
+export default defineEventHandler(() => ({ products, }) );
